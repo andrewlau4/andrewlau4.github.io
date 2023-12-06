@@ -11,10 +11,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <style>
+        .center {
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .loader {
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #ffffbe; 
+            width: 25px;
+            height: 25px;
+            -webkit-animation: spin 2s linear infinite; /* Safari */
+            animation: spin 2s linear infinite;
+        }
+        
+        /* Safari */
+        @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
   <script type="module" crossorigin src="/assets/index-PA__naRK.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/index-9edjxS5Y.css">
 </head>
 <body>
-    <div id="root"></div></body>
+
+    <div id="root">
+        <div id="loadingmsg" class="center">
+            Please wait. Loading...  
+            <div class="loader center"></div>
+        </div>
+    </div></body>
 
 </html>
